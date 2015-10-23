@@ -15,6 +15,6 @@ This parameter serves two purposes:
 * first, we provide it to the `mdfind` command to find all images that have a width or height (in pixels) greater than this value
 * next, we provide it to the `sips` command and have it shrink all of the images that the `mdfind` found so that their maximum width or height (whichever is greater) is equal to this value
 
-#### CORES
+#### CONCURRENCY
 we pass this value to the `-P` option of `xargs`, which tells `xargs` to run at most this many invocations of the `sips` command. 
 I set this to `4` because that's how many vcores my laptop has, but I don't think it's limited by the amount of vcores, so you can set it higher or lower as needed. 
