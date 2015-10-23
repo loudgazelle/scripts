@@ -8,9 +8,9 @@ DIR=$(pwd)
 MAX_SIZE=2590
 
 # tell xargs to run this many sips processes in parallel
-CORES=4
+CONCURRENCY=4
 
-mdfind -0 -onlyin $DIR "kMDItemPixelHeight > $MAX_SIZE || kMDItemPixelWidth > $MAX_SIZE"| xargs -0 -P $CORES -n 1 sips -Z $MAX_SIZE
+mdfind -0 -onlyin $DIR "kMDItemPixelHeight > $MAX_SIZE || kMDItemPixelWidth > $MAX_SIZE"| xargs -0 -P $CONCURRENCY -n 1 sips -Z $MAX_SIZE
 
 
 
