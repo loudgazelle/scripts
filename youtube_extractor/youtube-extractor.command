@@ -1,6 +1,7 @@
 #!/bin/bash
+# from https://github.com/loudgazelle/scripts
 
-DIRECTORY="$HOME/Downloads/Youtube/"
+DIRECTORY="$HOME/Downloads/YouTube/"
 
 #check if the directory exists. If it doesn't, create it
 if [ ! -d "$DIRECTORY" ]; then
@@ -12,10 +13,6 @@ echo  "Paste the URL to the video you want to convert and press return "
 echo " "
 read url
 
-# Explanation of the options we're using: 
-#   -x : extract the audio track
-#   --audio-quality 0 : use the highest quality audio
-#   -o "%(title)s.%(ext)s" : use the video title as the name of the file
 youtube-dl -x --audio-quality 0 -o "%(title)s.%(ext)s" $url >> /dev/null
 
 echo "Download Complete! "
@@ -24,7 +21,8 @@ echo " "
 echo " "
 echo " "
 
-# open a finder window at $HOME/Downloads/Youtube/
+# open a finder window at the current directory, 
+# which we earlier set to $HOME/Downloads/Youtube/
 open .
 
 exit 0
