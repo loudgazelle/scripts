@@ -9,4 +9,4 @@ I found that using the OS X `sips` command to shrink the images by _just 2 pixel
 I created this wrapper script so my wife can use [`youtube-dl`](https://github.com/rg3/youtube-dl) to download songs from YouTube without having to remember the command line options. 
 
 # Contributing
-If you have an improvement to suggest feel free to fork the repo and submit a pull request. 
+If you have an improvement to suggest feel free to fork the repo, make your change, and submit a pull request. 
