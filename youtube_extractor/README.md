@@ -1,5 +1,5 @@
 # youtube-extractor.command
-I created this dead-simple script so my wife can use [youtube-dl](https://github.com/rg3/youtube-dl) to download songs from YouTube without having to remember the command line options. 
+I created this dead-simple script so my wife can use [`youtube-dl`](https://github.com/rg3/youtube-dl) to download songs from YouTube without having to remember the command line options. 
 
 ## Variable~~s~~
 #### DIRECTORY
